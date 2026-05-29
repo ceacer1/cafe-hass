@@ -48,7 +48,7 @@ export const DelayNode = memo(function DelayNode({ id, data, selected }: DelayNo
       )}
       <Handle
         type="target"
-        position={Position.Left}
+        position={Position.Top}
         className="!w-3 !h-3 !bg-purple-500 !border-purple-700"
       />
 
@@ -70,7 +70,7 @@ export const DelayNode = memo(function DelayNode({ id, data, selected }: DelayNo
 
       <Handle
         type="source"
-        position={Position.Right}
+        position={Position.Bottom}
         className="!w-3 !h-3 !bg-purple-500 !border-purple-700"
       />
     </div>

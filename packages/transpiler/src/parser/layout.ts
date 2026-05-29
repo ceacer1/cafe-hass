@@ -29,7 +29,7 @@ export async function applyHeuristicLayout(
       id: 'root',
       layoutOptions: {
         'elk.algorithm': 'layered',
-        'elk.direction': 'RIGHT',
+        'elk.direction': 'DOWN',
         'elk.spacing.nodeNode': '80',
         'elk.layered.spacing.nodeNodeBetweenLayers': '100',
         'elk.spacing.edgeNode': '40',
@@ -77,7 +77,7 @@ export function applyHeuristicLayoutSync(nodes: FlowNode[], _edges: FlowEdge[]):
 function applyFallbackLayout(nodes: FlowNode[]): FlowNode[] {
   const x = 100;
   const y = 100;
-  const columnWidth = 300;
+  const columnWidth = 240;
   const rowHeight = 150;
   const nodesPerRow = 3;
 

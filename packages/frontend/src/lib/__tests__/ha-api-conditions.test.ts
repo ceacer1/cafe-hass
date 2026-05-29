@@ -4,7 +4,7 @@ import { HomeAssistantAPI } from '../ha-api';
 
 /**
  * Regression tests for issue #163: Conditions not being saved to Home Assistant
- * https://github.com/FezVrasta/cafe-hass/issues/163
+ * https://github.com/ceacer1/cafe-hass/issues/163
  *
  * The issue was that createAutomation and updateAutomation were not including
  * the conditions field in the payload sent to Home Assistant, causing conditions

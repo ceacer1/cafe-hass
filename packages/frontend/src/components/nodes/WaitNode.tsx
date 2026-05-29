@@ -50,7 +50,7 @@ export const WaitNode = memo(function WaitNode({ id, data, selected }: WaitNodeP
       )}
       <Handle
         type="target"
-        position={Position.Left}
+        position={Position.Top}
         className="!w-3 !h-3 !bg-orange-500 !border-orange-700"
       />
 
@@ -87,7 +87,7 @@ export const WaitNode = memo(function WaitNode({ id, data, selected }: WaitNodeP
 
       <Handle
         type="source"
-        position={Position.Right}
+        position={Position.Bottom}
         className="!w-3 !h-3 !bg-orange-500 !border-orange-700"
       />
     </div>
