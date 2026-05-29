@@ -9,7 +9,7 @@
 
 [![HACS Badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Stars](https://img.shields.io/github/stars/FezVrasta/cafe-hass?style=flat&color=gold)](https://github.com/FezVrasta/cafe-hass)
+[![Stars](https://img.shields.io/github/stars/ceacer1/cafe-hass?style=flat&color=gold)](https://github.com/ceacer1/cafe-hass)
 
 **C.A.F.E.** is a visual flow editor that brings Node-RED-style power to Home Assistant **without the external engine**. It transpiles your visual diagrams into 100% compliant, native Home Assistant logic stored directly in the core system.
 
@@ -73,7 +73,7 @@ C.A.F.E. is architected with strict engineering principles to ensure your home r
 2. **Add Custom Repository**:
    - Go to **HACS** → **Integrations**
    - Click the **⋮** menu → **Custom repositories**
-   - Add: `https://github.com/FezVrasta/cafe-hass` as an **Integration**.
+   - Add: `https://github.com/ceacer1/cafe-hass` as an **Integration**.
 3. **Install & Restart**: Find **C.A.F.E.** in HACS, download it, and restart Home Assistant.
 4. **Enable**: Go to **Settings** → **Devices & Services** → **Add Integration** → Search for **C.A.F.E.**
 
@@ -116,4 +116,4 @@ You can use Jinja2 templates directly in any text field within C.A.F.E. For more
 
 ## ⚖️ License
 
-MIT License. Created by [Federico Zivolo](https://github.com/FezVrasta).
+MIT License. Maintained by [@ceacer1](https://github.com/ceacer1), originally created by [Federico Zivolo](https://github.com/FezVrasta).

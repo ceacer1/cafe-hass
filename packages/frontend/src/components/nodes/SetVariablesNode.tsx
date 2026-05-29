@@ -51,7 +51,7 @@ export const SetVariablesNode = memo(function SetVariablesNode({
       )}
       <Handle
         type="target"
-        position={Position.Left}
+        position={Position.Top}
         className="!w-3 !h-3 !bg-cyan-500 !border-cyan-700"
       />
 
@@ -75,7 +75,7 @@ export const SetVariablesNode = memo(function SetVariablesNode({
 
       <Handle
         type="source"
-        position={Position.Right}
+        position={Position.Bottom}
         className="!w-3 !h-3 !bg-cyan-500 !border-cyan-700"
       />
     </div>
