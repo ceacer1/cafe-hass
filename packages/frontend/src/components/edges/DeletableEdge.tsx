@@ -28,7 +28,7 @@ export function DeletableEdge({
   const setUnsavedChanges = useFlowStore((state) => state.setUnsavedChanges);
   const canDeleteEdge = useFlowStore((state) => state.canDeleteEdge);
 
-  // Detect reverse edges (target is above source in top-to-bottom layouts)
+  // Detect reverse edges (edges that flow upward, where targetY < sourceY)
   const isReverseEdge = targetY < sourceY;
 
   // Apply detour offsets for reverse edges to prevent overlap
@@ -47,7 +47,7 @@ export function DeletableEdge({
 
   // For reverse edges, create a detour path that goes around nodes
   if (isReverseEdge) {
-    // Create a path that goes down -> right -> up -> left to avoid overlap
+    // Create a detour path: vertical down, horizontal right, vertical up, then horizontal back to target
     startDownY = sourceY + verticalOffset;
     rightX = Math.max(sourceX, targetX) + horizontalOffset;
     endUpY = targetY - verticalOffset;
